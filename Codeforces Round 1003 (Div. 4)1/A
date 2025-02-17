@@ -1,1 +1,17 @@
-asd
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main() {
+	int t; cin >> t;
+	
+	while (t--) {
+		string str; cin >> str;
+		int len = str.size();
+		str.pop_back();
+		str[len - 2] = 'i';
+		cout << str << endl;
+
+	}
+	
+	return 0;
+}
